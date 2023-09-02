@@ -22,10 +22,10 @@ This is a scheduler microservice built using Nest.js, TypeScript, and PostgreSQL
 ### Installation
 
 1. Clone the repository:
-
    ```shell
-   git clone https://github.com/your-username/scheduler-microservice.git
+   git clone https://github.com/Debabrata-Kar/scheduler-microservice.git
    cd scheduler-microservice
+   ```
 
 2.  Install dependencies:
    ```shell
@@ -57,5 +57,5 @@ This is a scheduler microservice built using Nest.js, TypeScript, and PostgreSQL
 -  The API is documented using Swagger, which provides a user-friendly interface for exploring and testing the API endpoints.
 -  Access the Swagger documentation UI by navigating to the following URL in your web browser:
   ```shell
-   http://localhost:3000/api/docs
+   http://localhost:3000/api
    ```

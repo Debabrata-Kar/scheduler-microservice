@@ -26,3 +26,39 @@ This is a scheduler microservice built using Nest.js, TypeScript, and PostgreSQL
    ```shell
    git clone https://github.com/your-username/scheduler-microservice.git
    cd scheduler-microservice
+
+Install dependencies:
+
+shell
+Copy code
+npm install
+Set up a PostgreSQL database:
+
+Create a PostgreSQL database named scheduler_db. Then, configure the database connection settings in src/app.module.ts:
+
+typescript
+Copy code
+// src/app.module.ts
+// ...
+TypeOrmModule.forRoot({
+  type: 'postgres',
+  host: 'localhost',
+  port: 5432,
+  username: 'your_username',
+  password: 'your_password',
+  database: 'scheduler_db',
+  entities: [__dirname + '/**/*.entity{.ts,.js}'],
+  synchronize: true,
+}),
+// ...
+Start the application:
+
+shell
+Copy code
+npm run start:dev
+Usage
+Access the API:
+
+To list all jobs: GET http://localhost:3000/jobs
+To retrieve details of a specific job by ID: GET http://localhost:3000/jobs/:id
+To create a new job: POST http://localhost:3000/jobs

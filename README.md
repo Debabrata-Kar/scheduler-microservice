@@ -24,7 +24,7 @@ This is a scheduler microservice built using Nest.js, TypeScript, and PostgreSQL
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/scheduler-microservice.git
+   git clone https://github.com/Debabrata-Kar/scheduler-microservice.git
    cd scheduler-microservice
    ```
 

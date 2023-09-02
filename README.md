@@ -44,5 +44,3 @@ This is a scheduler microservice built using Nest.js, TypeScript, and PostgreSQL
     -   To retrieve details of a specific job by ID: `GET http://localhost:3000/jobs/:id`
     -   To create a new job: `POST http://localhost:3000/jobs`
 
-    `\
-    `

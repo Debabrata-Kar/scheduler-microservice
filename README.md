@@ -30,13 +30,14 @@ This is a scheduler microservice built using Nest.js, TypeScript, and PostgreSQL
 2.  Install dependencies:
    ```shell
    npm install
+   ```
 
-3.  Set up a PostgreSQL database and configure the connection settings in `src/app.module.ts`.
-
+3.  Set up a PostgreSQL database and configure the connection settings in src/app.module.ts.
+   
 4.  Start the application:
    ```shell
    npm run start:dev
-
+   ```
 ### Usage
 
 -   Access the API:
@@ -44,3 +45,17 @@ This is a scheduler microservice built using Nest.js, TypeScript, and PostgreSQL
     -   To retrieve details of a specific job by ID: `GET http://localhost:3000/jobs/:id`
     -   To create a new job: `POST http://localhost:3000/jobs`
 
+### Testing
+
+-  The Scheduler Microservice includes testing to ensure the reliability of its features. To run tests, use the following command:
+  ```shell
+   npm test
+   ```
+
+### Documentation
+
+-  The API is documented using Swagger, which provides a user-friendly interface for exploring and testing the API endpoints.
+-  Access the Swagger documentation UI by navigating to the following URL in your web browser:
+  ```shell
+   http://localhost:3000/api/docs
+   ```

@@ -28,14 +28,14 @@ This is a scheduler microservice built using Nest.js, TypeScript, and PostgreSQL
    cd scheduler-microservice
 
 2.  Install dependencies:
-
-    `npm install`
+   ```shell
+   npm install
 
 3.  Set up a PostgreSQL database and configure the connection settings in `src/app.module.ts`.
 
 4.  Start the application:
-
-    `npm run start:dev`
+   ```shell
+   npm run start:dev
 
 ### Usage
 

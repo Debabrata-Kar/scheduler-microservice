@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nest start --watch"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +17,13 @@
     "@nestjs/platform-express": "^10.2.3",
     "@nestjs/schedule": "^3.0.3",
     "@nestjs/swagger": "^7.1.10",
+    "@nestjs/testing": "^10.2.4",
     "@nestjs/typeorm": "^10.0.0",
     "pg": "^8.11.3",
+    "source-map-support": "^0.5.21",
     "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4"
   }
 }

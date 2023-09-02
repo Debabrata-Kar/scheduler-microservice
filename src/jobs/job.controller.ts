@@ -1,4 +1,3 @@
-// src/jobs/job.controller.ts
 import { Controller, Get, Post, Param, Body } from '@nestjs/common';
 import { JobService } from './job.service';
 import { Job } from './job.entity';
@@ -14,7 +13,7 @@ export class JobController {
 
   @Get(':id')
   async findOne(@Param('id') id: number): Promise<Job | undefined> {
-    return this.jobService.findOne(id);
+    return this.jobService.findOneById(id);
   }
 
   @Post()

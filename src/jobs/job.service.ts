@@ -1,4 +1,3 @@
-// src/jobs/job.service.ts
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -15,8 +14,8 @@ export class JobService {
     return this.jobRepository.find();
   }
 
-  async findOne(id: number): Promise<Job> {
-    const job = await this.jobRepository.findOne(id);
+  async findOneById(id: number): Promise<Job> {
+    const job = await this.jobRepository.findOne({ where: { id } });
     if (!job) {
       throw new NotFoundException(`Job with ID ${id} not found`);
     }
